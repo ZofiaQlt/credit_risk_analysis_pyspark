@@ -56,9 +56,6 @@ def plot_distribution_stats(data, figsize=(20, 10)):
     
 #====================================================
 
-import matplotlib.pyplot as plt
-import seaborn as sns
-
 def plot_distribution_comparison(distri_avant, distri_après, column_name):
     
     # Créez une figure avec deux sous-graphiques côte à côte
