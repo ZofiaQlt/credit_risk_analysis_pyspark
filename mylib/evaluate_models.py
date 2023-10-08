@@ -396,9 +396,7 @@ def evaluate_regression_models(X_train, X_test, y_train, y_test, intercept=True)
         print(results_df)
         return results_df
     
-    
-import numpy as np
-import pandas as pd
+
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import BaggingClassifier, RandomForestClassifier, AdaBoostClassifier, GradientBoostingClassifier, StackingClassifier
 from sklearn.preprocessing import StandardScaler
@@ -407,7 +405,6 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB, MultinomialNB
 from sklearn.metrics import accuracy_score, recall_score, precision_score, f1_score, confusion_matrix
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -509,9 +506,9 @@ def evaluate_classification_models(X_train, X_test, y_train, y_test, cf_matrix=T
     gbm = GradientBoostingClassifier()
     gbm.fit(X_train, y_train)
     gbm_preds = gbm.predict(X_test)
-    results['Gradient Boosting Classifier'] = (accuracy_score(y_test, gbm_preds), 
-                                               recall_score(y_test, gbm_preds), 
-                                               precision_score(y_test, gbm_preds), 
+    results['Gradient Boosting Classifier'] = (accuracy_score(y_test, gbm_preds),
+                                               recall_score(y_test, gbm_preds),
+                                               precision_score(y_test, gbm_preds),
                                                f1_score(y_test, gbm_preds))
 
     # Stacking Classifier
