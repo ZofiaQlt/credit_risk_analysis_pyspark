@@ -1,5 +1,3 @@
-import pandas as pd
-import numpy as np
 from scipy import stats
 
 def calculate_normality(data_frame, alpha=0.05):
@@ -22,19 +20,19 @@ def calculate_normality(data_frame, alpha=0.05):
 
             # Interpreting Skewness
             if -0.5 < skew < 0.5:
-                skewness_result = (cyan + f'The distribution is approximately symmetric' + end)
+                skewness_result = (cyan + 'The distribution is approximately symmetric' + end)
             elif -1 < skew < -0.5 or 0.5 < skew < 1.0:
-                skewness_result = (red + f'The distribution is moderately skewed' + end)
+                skewness_result = (red + 'The distribution is moderately skewed' + end)
             else:
-                skewness_result = (red + f'The distribution is highly skewed' + end)
+                skewness_result = (red + 'The distribution is highly skewed' + end)
 
             # Interpreting Kurtosis
             if -0.5 < kurtosis < 0.5:
-                kurtosis_result = (cyan + f'The distribution is approximately normal, sometimes called mesokurtic distributions' + end)
+                kurtosis_result = (cyan + 'The distribution is approximately normal, sometimes called mesokurtic distributions' + end)
             elif kurtosis <= -0.5:
-                kurtosis_result = (red + f'The distribution is light-tailed (negative), sometimes called platykurtic distributions' + end)
+                kurtosis_result = (red + 'The distribution is light-tailed (negative), sometimes called platykurtic distributions' + end)
             elif kurtosis >= 0.5:
-                kurtosis_result = (red + f'The distribution is heavy-tailed (positive), sometimes called leptokurtic distribution' + end)
+                kurtosis_result = (red + 'The distribution is heavy-tailed (positive), sometimes called leptokurtic distribution' + end)
 
             # Print skewness and kurtosis
             print(f"Skew: {skew}   {skewness_result}")
