@@ -19,7 +19,7 @@ Le projet vise à développer un modèle prédictif, basé sur les données hist
 
 ## Applications business
 
-La thématique du projet revêt une importance significative dans le domaine financier et bancaire, offrant des informations précieuses et des avantages à plusieurs parties prenantes :
+La thématique du projet revêt une importance significative dans le domaine financier et bancaire, offrant des informations et des avantages à plusieurs parties prenantes :
 
 **Institutions de prêt** : Les prêteurs peuvent utiliser le modèle prédictif pour prendre des décisions de prêt plus éclairées et basées sur les données. En évaluant avec précision la solvabilité des demandeurs, ils peuvent minimiser les risques de défaut et optimiser leurs stratégies de prêt. Cela se traduit par de meilleures performances de portefeuille et des pertes financières réduites.
 
