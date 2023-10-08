@@ -1,18 +1,12 @@
-from sklearn.model_selection import cross_val_score
-from sklearn.model_selection import RepeatedStratifiedKFold
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import PowerTransformer
 from sklearn.preprocessing import RobustScaler
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.preprocessing import MaxAbsScaler  
 from sklearn.preprocessing import QuantileTransformer
-from pandas.plotting import scatter_matrix
 from matplotlib import pyplot
-from sklearn.pipeline import Pipeline
 import pandas as pd
-import numpy as np
 import scipy.stats as stats
 import matplotlib.pyplot as plt
 
@@ -37,7 +31,7 @@ def scalers(df):
         nb_outlier_z = len(outlier_z)
         print(bold + f"\n{i} : {nb_outlier_z} outliers \n\n" + end + f"{outlier_z[['Pays', i]]} \n" + "-" * 50)
     
-    #création de DF avec valeurs numériques uniquement    
+    #création de DF avec valeurs numériques uniquement
     df_scal = df.copy()
     df_scal = df[num]
     #print(df_scal.sample())
@@ -74,7 +68,7 @@ def scalers(df):
         pyplot.show()
         
         # création boxplots
-        fig=plt.figure(figsize=(25,15))
+        plt.figure(figsize=(25,15))
         df_scal.boxplot(vert=False)
         plt.yticks(size=20)
         plt.show()
