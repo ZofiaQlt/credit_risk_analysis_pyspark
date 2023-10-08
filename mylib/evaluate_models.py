@@ -399,7 +399,6 @@ def evaluate_regression_models(X_train, X_test, y_train, y_test, intercept=True)
 
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import BaggingClassifier, RandomForestClassifier, AdaBoostClassifier, GradientBoostingClassifier, StackingClassifier
-from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB, MultinomialNB
