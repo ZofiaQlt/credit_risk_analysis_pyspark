@@ -1,4 +1,4 @@
-# Credit risk assessment with PySpark
+# Credit risk assessment with PySpark 
 <img width="1000" alt="Capture d’écran 2023-10-08 à 20 45 02" src="https://github.com/ZofiaQlt/credit_risk_pyspark/assets/67431758/5ef345df-6b12-41e9-aca6-c6ebace0b9fa">
 
 LendingClub est une entreprise pionnière dans le secteur des services financiers, dont le siège social est situé à San Francisco, en Californie. Elle a réalisé plusieurs réalisations notables dans l'industrie, telles que l'enregistrement de ses offres en tant que titres auprès de la Securities and Exchange Commission (SEC) et l'introduction d'un marché secondaire pour la négociation de prêts. À son apogée, LendingClub était la plus grande plateforme de prêt entre pairs au monde, facilitant des prêts allant de 1 000 à 40 000 dollars, généralement sur une période de trois ans. Les investisseurs pouvaient examiner et sélectionner des prêts en fonction des détails des emprunteurs, de la note de crédit des prêts et de leur objectif, en percevant des intérêts sur leurs investissements. LendingClub générait des revenus grâce aux frais facturés aux emprunteurs et aux frais de service perçus auprès des investisseurs.
